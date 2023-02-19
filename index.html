@@ -19,6 +19,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header">
@@ -53,12 +56,95 @@
             </li>
           </ul>
         </address>
+        <button data-menu-open type="button" class="header-menu-btn">
+          <svg class="header-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="menu-container">
+          <div>
+            <button class="menu-close" data-menu-close type="button">
+              <svg class="menu-close-btn" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mobile-menu-list list">
+                <li class="mobile-menu-item">
+                  <a href="./index.html" class="mobile-menu-link link"
+                    >Studio</a
+                  >
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="./portfolio.html" class="mobile-menu-link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mobile-menu-auth">
+              <ul class="mobile-menu-auth-list list">
+                <li class="mobile-menu-auth-item">
+                  <a
+                    href="tel:+110001111111"
+                    class="mobile-menu-auth-phone link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-menu-auth-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-menu-auth-mail link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mobile-soc-list list">
+              <li class="mobile-soc-item list">
+                <a href="" class="mobile-soc-link link">
+                  <svg class="mobile-soc-icon" width="16" height="16">
+                    <use href="./images/soc-icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-item list">
+                <a href="" class="mobile-soc-link link">
+                  <svg class="mobile-soc-icon" width="16" height="16">
+                    <use href="./images/soc-icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-item list">
+                <a href="" class="mobile-soc-link link">
+                  <svg class="mobile-soc-icon" width="16" height="16">
+                    <use href="./images/soc-icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-item list">
+                <a href="" class="mobile-soc-link link">
+                  <svg class="mobile-soc-icon" width="16" height="16">
+                    <use href="./images/soc-icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <div class="hero-container">
+          <h1 class="hero-title">Effective Solutions For Your Business</h1>
           <button class="hero-btn" data-modal-open type="button">
             Order Service
           </button>
@@ -125,7 +211,11 @@
           <ul class="doings-list list">
             <li class="doings-item">
               <img
-                src="./images/about_img1.jpg"
+                srcset="
+                  ./images/about-img1.jpg    1x,
+                  ./images/about-img1-2x.jpg 2x
+                "
+                src="./images/about-img1.jpg"
                 alt="pc"
                 width="360"
                 height="300"
@@ -133,7 +223,11 @@
             </li>
             <li class="doings-item">
               <img
-                src="./images/about_img2.jpg"
+                srcset="
+                  ./images/about-img2.jpg    1x,
+                  ./images/about-img2-2x.jpg 2x
+                "
+                src="./images/about-img2.jpg"
                 alt="phone and layers"
                 width="360"
                 height="300"
@@ -141,7 +235,11 @@
             </li>
             <li class="doings-item">
               <img
-                src="./images/about_img3.jpg"
+                srcset="
+                  ./images/about-img3.jpg    1x,
+                  ./images/about-img3-2x.jpg 2x
+                "
+                src="./images/about-img3.jpg"
                 alt="phone in hand"
                 width="360"
                 height="300"
@@ -151,11 +249,12 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container mini-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/team_img1.jpg 1x, ./images/team-img1-2x.jpg 2x"
                 class="team-img"
                 src="./images/team_img1.jpg"
                 alt="photo of a team member"
@@ -197,6 +296,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team_img2.jpg 1x, ./images/team-img2-2x.jpg 2x"
                 class="team-img"
                 src="./images/team_img2.jpg"
                 alt="photo of a team member"
@@ -238,6 +338,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team_img3.jpg 1x, ./images/team-img3-2x.jpg 2x"
                 class="team-img"
                 src="./images/team_img3.jpg"
                 alt="photo of a team member"
@@ -279,6 +380,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team_img4.jpg 1x, ./images/team-img4-2x.jpg 2x"
                 class="team-img"
                 src="./images/team_img4.jpg"
                 alt="photo of a team member"
@@ -384,7 +486,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-conatiner container">
+      <div class="footer-container container">
         <div class="footer-text-container">
           <a href="./index.html" class="footer-logo link">
             <span class="footer-logo-first">Web</span>Studio
@@ -512,5 +614,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

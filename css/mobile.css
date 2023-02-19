@@ -1,0 +1,37 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 767px;
+  }
+
+  .mobile-menu-auth-phone {
+    font-size: 36px;
+  }
+
+  .mobile-soc-list {
+    gap: 56px;
+  }
+
+  .doings {
+    display: none;
+  }
+  .benefits-icon-box {
+    display: none;
+  }
+
+  .hero {
+    background-image: var(--gra), url(../images/hero-bg-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--gra), url(../images/hero-bg-tablet-2x.jpg);
+    }
+  }
+
+  .check-text {
+    font-size: 12px;
+  }
+}
