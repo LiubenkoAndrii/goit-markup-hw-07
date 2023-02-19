@@ -34,4 +34,9 @@
   .check-text {
     font-size: 12px;
   }
+
+    .footer-text-container {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
 }
