@@ -19,23 +19,24 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo link">
             <span class="header-logo-first">Web</span>Studio
           </a>
           <ul class="header-list list">
             <li class="header-item">
-              <a href="./index.html" class="header-link link">Studio</a>
+              <a href="./index.html" class="header-link link ">Studio</a>
             </li>
             <li class="header-item">
-              <a href="./portfolio.html" class="header-link link current"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="header-link link current">Portfolio</a>
             </li>
             <li class="header-item">
               <a href="" class="header-link link">Contacts</a>
@@ -45,17 +46,84 @@
         <address class="header-auth">
           <ul class="header-auth-list list">
             <li class="header-auth-item">
-              <a href="mailto:info@devstudio.com" class="header-auth-mail link"
-                >info@devstudio.com</a
-              >
+              <a href="mailto:info@devstudio.com" class="header-auth-mail link">info@devstudio.com</a>
             </li>
             <li class="header-auth-item">
-              <a href="tel:+110001111111" class="header-auth-phone link"
-                >+11 (000) 111-11-11</a
-              >
+              <a href="tel:+110001111111" class="header-auth-phone link">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button data-menu-open type="button" class="header-menu-btn">
+          <svg class="header-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="menu-container">
+          <div>
+            <button class="menu-close" data-menu-close type="button">
+              <svg class="menu-close-btn" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mobile-menu-list list">
+                <li class="mobile-menu-item">
+                  <a href="./index.html" class="mobile-menu-link link">Studio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mobile-menu-auth">
+              <ul class="mobile-menu-auth-list list">
+                <li class="mobile-menu-auth-item">
+                  <a href="tel:+110001111111" class="mobile-menu-auth-phone link">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-menu-auth-item">
+                  <a href="mailto:info@devstudio.com" class="mobile-menu-auth-mail link">info@devstudio.com</a>
+                </li>
+              </ul>
+            </address>
+            <ul class="mobile-soc-list list">
+              <li class="mobile-soc-item list">
+                <a href="" class="mobile-soc-link link">
+                  <svg class="mobile-soc-icon" width="16" height="16">
+                    <use href="./images/soc-icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-item list">
+                <a href="" class="mobile-soc-link link">
+                  <svg class="mobile-soc-icon" width="16" height="16">
+                    <use href="./images/soc-icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-item list">
+                <a href="" class="mobile-soc-link link">
+                  <svg class="mobile-soc-icon" width="16" height="16">
+                    <use href="./images/soc-icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-soc-item list">
+                <a href="" class="mobile-soc-link link">
+                  <svg class="mobile-soc-icon" width="16" height="16">
+                    <use href="./images/soc-icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -65,7 +133,7 @@
           <h2 class="works-heading visually-hidden">
             Filter examples of our works
           </h2>
-          <ul class="works-list list">
+          <ul class="works-list list ">
             <li class="works-item">
               <button type="button" class="works-btn">All</button>
             </li>
@@ -83,7 +151,7 @@
             </li>
           </ul>
           <h2 class="works-subtitle visually-hidden">Examples of our works</h2>
-          <ul class="works-img-list list">
+          <ul class="works-img-list list container">
             <li class="works-img-item">
               <a href="" class="works-link">
                 <div class="works-overlay-wrap">
@@ -270,7 +338,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-container container">
+      <div class="footer-container">
         <div class="footer-text-container">
           <a href="./index.html" class="footer-logo link">
             <span class="footer-logo-first">Web</span>Studio
@@ -316,13 +384,7 @@
         <div class="footer-modal-wrap">
           <p class="footer-modal-text">Subscribe</p>
           <form class="footer-modal">
-            <input
-              class="footer-input"
-              type="email"
-              id="footer-email"
-              placeholder="E-mail"
-              required
-            />
+            <input class="footer-input" type="email" id="footer-email" placeholder="E-mail" required />
             <button type="submit" class="modal-footer-btn">
               Subscribe
               <svg class="footer-btn-icon" width="24" height="20">

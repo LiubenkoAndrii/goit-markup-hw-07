@@ -1,10 +1,10 @@
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1199px;
+   
   }
 
   .mini-container {
-    max-width: 584px;
+max-width: 736px;
   }
 
   .header {
@@ -13,7 +13,11 @@
 
   .header-container {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 736px;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   .header-navigation {
@@ -193,8 +197,10 @@
 
   .customers-list {
     gap: 24px;
-    padding-left: 92px;
-    padding-right: 92px;
+    max-width: 556px;
+
+    /* padding-left: 92px;
+    padding-right: 92px; */
   }
 
   .customers-item {
@@ -204,11 +210,15 @@
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    margin-left:  auto;
+    margin-right: auto;
+    max-width: 584px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .footer-text-container {
-    padding-left: 92px;
+    margin-left: 0;
     padding-right: 24px;
     margin-bottom: 72px;
   }
@@ -232,7 +242,8 @@
   }
 
   .footer-modal-wrap {
-    margin-left: 92px;
+    justify-content: left;
+    margin-left: 0px;
   }
 
   .footer-modal {
@@ -253,4 +264,9 @@
   .modal-footer-btn {
     height: 40px;
   }
+
+    .modal {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
 }
